@@ -52,13 +52,13 @@ Para comprobar cuantos tipos de freatures distintos hay en `Drosophila_melanogas
 
 ![freatures-drosophila](images/freatures-drosophila.PNG)
 
-Como se puede comprobar el comando `wc -l` muestra que hay 9 líneas, por lo tanto hay 9 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo []().
+Como se puede comprobar el comando `wc -l` muestra que hay 9 líneas, por lo tanto hay 9 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo [drosophila](documents/drosophila.txt).
 
 Para comprobar cuantos tipos de freatures distintos hay en `Homo_sapiens.GRCh38.102.gtf.gz` hemos empleado el siguiente pipeline: `zcat 2-gestion-y-descarga-pedro-antonio/gtfs/Homo_sapiens.GRCh38.102.gtf.gz | tail -n+4 | cut -f 2-3 | sort | uniq -c | sort -nr | tee human.txt | wc -l`. Los resultados obtenidos han sido los siguientes:
 
 ![freatures-human](images/freatures-human.PNG)
 
-Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo tanto hay 53 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo []().
+Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo tanto hay 53 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo [human](documents/human.txt).
 
 ## Ejercicio 3
 
