@@ -72,7 +72,7 @@ Después he introducido la siguiente pipeline `grep ">" gtfs/covid-samples.fasta
 
 ![ejercicio2](images/ejercicio2.PNG)
 
-Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre, los resultados pueden consultarse en el siguiente archivo de texto [covid-seq-names.txt](covid-seq-names.txt).
+Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre, los resultados pueden consultarse en el siguiente archivo de texto [covid-seq-names.txt](documents/covid-seq-names.txt).
 
 ## Ejercicio 4
 
