@@ -52,13 +52,13 @@ Para comprobar cuántos tipos de freatures distintos hay en `Drosophila_melanoga
 
 ![freatures-drosophila](images/freatures-drosophila.PNG)
 
-Como se puede comprobar el comando `wc -l` muestra que hay 9 líneas, por lo tanto hay 9 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo: [drosophila](documents/drosophila.txt).
+Como se puede comprobar el comando `wc -l` muestra que hay 9 líneas, por lo tanto hay 9 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo de texto: [drosophila](documents/drosophila.txt).
 
 Para comprobar cuántos tipos de freatures distintos hay en `Homo_sapiens.GRCh38.102.gtf.gz` hemos empleado el siguiente pipeline: `zcat 2-gestion-y-descarga-pedro-antonio/gtfs/Homo_sapiens.GRCh38.102.gtf.gz | tail -n+4 | cut -f 2-3 | sort | uniq -c | sort -nr | tee human.txt | wc -l`. Los resultados obtenidos han sido los siguientes:
 
 ![freatures-human](images/freatures-human.PNG)
 
-Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo tanto hay 53 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo: [human](documents/human.txt).
+Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo tanto hay 53 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo de texto: [human](documents/human.txt).
 
 ## Ejercicio 3
 
@@ -72,7 +72,7 @@ Después he introducido la siguiente pipeline `grep ">" gtfs/covid-samples.fasta
 
 ![ejercicio2](images/ejercicio2.PNG)
 
-Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre.
+Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre, los resultados pueden consultarse en el siguiente archivo de texto [covid-seq-names.txt](covid-seq-names.txt).
 
 ## Ejercicio 4
 
