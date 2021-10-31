@@ -27,11 +27,17 @@ En segundo lugar para ordenar números en orden descendente emplearemos el coman
 `sort -nr gene-2-desordenado.bed`
 Y para ordenar usando la tercera y segunda columna según el orden de prioridad emplearemos el comando: 
 `sort -k3,4 gene-2-desordenado.bed `
+Antes de esto hemos consultado el manual para ver como se emplearia la opción -k de sort: 
+`man sort`
+
+![manShortK1](images/manShortK1.png)
+![manShortK2](images/smanShortK2.png)
+
 Empleando los dos comandos a la vez nos quedaría así:
 `sort -nr -k3,2 gene-2-desordenado.bed`
 Con esto nos ordenará el fichero en orden descendente usándo la tercera columna para ordenar valores y después emplea la segunda columna.
  
-
+![sortNRK](images/sortNRK.PNG)
 
 
 
