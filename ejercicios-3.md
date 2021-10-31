@@ -66,14 +66,18 @@ Recuerdas `covid-samples.fasta`? Localízalo en tu HOME dentro de la carpeta gtf
 
 ### Respuesta ejercicio 3
 
+Primero he copiado el archivo `covid-samples.fasta` de la carpeta `/home/gtfs` a la carpeta `/home/pedrojf/gtfs`, para ello he empleado el comando `cp /home/gtfs/covid-samples.fasta /home/pedrojf/gtfs/`.
+
+Después he introducido la siguiente pipeline `grep ">" gtfs/covid-samples.fasta | cut -f 1-2 -d " " | sort | tee covid-seq-names.txt`. Hemos obtenido los siguientes resultados:
+
+![ejercicio2](images/ejercicio2.PNG)
+
+Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre.
 
 ## Ejercicio 4
 
 Encuentra, usando una sola línea, el número de usuarias diferentes que tienen al menos una carpeta a su nombre en el '/home' de CPG3.
 
 ### Respuesta ejercicio 4
-
-
-
 
 
