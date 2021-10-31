@@ -17,6 +17,13 @@ Trata ahora de ordenar este fichero de acuerdo a los siguientes criterios:
 3. Usando a la vez la tercera y la segunda columna (en este orden de prioridad). Consulta el manual para ver la opción -k. 
 
 ### Respuesta ejercicio 1
+En primer lugar se crea un fichero llamado "gene-2-desordenado.bed" a partir del comando sort -R ejecutado sobre el fichero `gene-2.bed`. Se ha empleado el comando: 
+`sort -R gene-2.bed > gene-2-desordenado.bed`
+Tras esto empleamos cat para ver el contenido del fichero `gene-2.bed` y del fichero desordenado que se ha creado en nuestra carpeta `gene-2-desordenado.bed`
+![sortR](images/sortR.png)
+
+
+
 
 ## Ejercicio 2
 
