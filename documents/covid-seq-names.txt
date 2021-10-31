@@ -1,0 +1,4 @@
+>MW181431.1 |Severe
+>MW186669.1 |Severe
+>MW186829.1 |Severe
+>MW186830.1 |Severe
