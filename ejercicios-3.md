@@ -62,7 +62,7 @@ Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo ta
 
 ## Ejercicio 3
 
-Recuerdas `covid-samples.fasta`? Localízalo en tu HOME, y extrae, usando un pipeline, los nombres de las secuencias contenidas en este fichero. Luego saca la primera palabra de cada una, ordénalas y guárdalas en un fichero `covid-seq-names.txt`.
+Recuerdas `covid-samples.fasta`? Localízalo en tu HOME dentro de la carpeta gtfs, y extrae, usando un pipeline, los nombres de las secuencias contenidas en este fichero. Luego saca la primera palabra de cada una, ordénalas y guárdalas en un fichero `covid-seq-names.txt`.
 
 ### Respuesta ejercicio 3
 
