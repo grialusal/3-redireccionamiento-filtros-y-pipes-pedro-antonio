@@ -30,8 +30,8 @@ Y para ordenar usando la tercera y segunda columna según el orden de prioridad 
 Antes de esto hemos consultado el manual para ver como se emplearia la opción -k de sort: 
 `man sort`
 
-![manShortK1](images/manShortK1.png)
-![manShortK2](images/smanShortK2.png)
+![manSortK1](images/manSortK1.png)
+![manSortK2](images/manSortK2.png)
 
 Empleando los dos comandos a la vez nos quedaría así:
 `sort -nr -k3,2 gene-2-desordenado.bed`
