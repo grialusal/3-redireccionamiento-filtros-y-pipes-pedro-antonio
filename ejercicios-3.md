@@ -68,11 +68,13 @@ Recuerdas `covid-samples.fasta`? Localízalo en tu HOME dentro de la carpeta gtf
 
 Primero he copiado el archivo `covid-samples.fasta` de la carpeta `/home/gtfs` a la carpeta `/home/pedrojf/gtfs`, para ello he empleado el comando `cp /home/gtfs/covid-samples.fasta /home/pedrojf/gtfs/`.
 
-Después he introducido la siguiente pipeline `grep ">" gtfs/covid-samples.fasta | cut -f 1-2 -d " " | sort | tee covid-seq-names.txt`. Hemos obtenido los siguientes resultados:
+Para extraer el nombre de cada secuencia con un pipeline tal y como pide la primera parte del enunciado hemos introducido la siguiente pipeline `grep ">" covid-samples.fasta`. Hemos obtenido los siguientes resultados:
 
-![ejercicio2](images/ejercicio2.PNG)
+![ejercicio2](images/nombres-secuencias.PNG)
 
-Tal y como se aprecia en la imágen, hemos obtenido 4 resultados, en la primera columna aparece el nombre de la secuencia y en la segunda columna la primera palabra que hay después del nombre, los resultados pueden consultarse en el siguiente archivo de texto [covid-seq-names.txt](documents/covid-seq-names.txt).
+Después, tal y como pide la segunda parte del ejercicio, hemos extraído la primera palabra de cada nombre y las hemos ordenado, por último hemos guardado todo en el siguiente archivo de texto: [covid-seq-names.txt](documents/covid-seq-names.txt). Para realizar la segunda parte del ejercicio hemos empleado la siguiente pipeline : `grep ">" covid-samples.fasta | cut -f 1 -d " " | sort | tee covid-seq-names.txt`, el resultado obtenido en la terminal tras aplicar este pipeline fue el siguiente:
+
+![images/primera-palabra.PNG]
 
 ## Ejercicio 4
 
