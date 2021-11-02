@@ -74,7 +74,7 @@ Para extraer el nombre de cada secuencia con un pipeline tal y como pide la prim
 
 Después, tal y como pide la segunda parte del ejercicio, hemos extraído la primera palabra de cada nombre y las hemos ordenado, por último hemos guardado todo en el siguiente archivo de texto: [covid-seq-names.txt](documents/covid-seq-names.txt). Para realizar la segunda parte del ejercicio hemos empleado la siguiente pipeline : `grep ">" covid-samples.fasta | cut -f 1 -d " " | sort | tee covid-seq-names.txt`, el resultado obtenido en la terminal tras aplicar este pipeline fue el siguiente:
 
-![images/primera-palabra.PNG]
+![primera-palabla](images/primera-palabra.PNG)
 
 ## Ejercicio 4
 
