@@ -86,21 +86,26 @@ Para hacer este ejercicio en una sola línea, primero vamos a ver lo que nos ten
 El primer comando usado nos permite ver todos los usuarios de las distintas carpetas y ficheros que hay en /home. 
 `ls -la`
 
+![lsla4](images/lsla4.png)
 
 Con el siguiente comando veremos en orden los usuarios, pudiendo ver aquí que el usuario root, el cual tiene 7 carpetas a su nombre en /home. 
 `ls -la|sort -k3`
 
+![sortk3](images/sortk3.png)
 
 Con el siguiente comando vemos que hay en total 41 líneas y por tanto esto indicaría que el número de usuarios en CPG3 sería de 34, ya que la primera línea en la que pone el total de memoria de /home no contaría como usuario y debido a que root es usuario de 7 carpetas distintas. 
 `ls -la|sort -k3|wc -l`
 
+![lsla4](wcl/wcl.png)
 
 Finalmente, procedimos a realizar el comando en una línea para ver los usuarios que teníamos y cuantas carpetas tenían a su nombre, pero nos dió error. No mostrándonos el total de carpetas que tenía el usuario root (solo nos mostró 5), que en total eran 7 y no mostrándonos tampoco las carpetas de otros usuarios y mostrándonos un total de otras 22 líneas vacias del corte que habíamos realizado. 
 `ls -la|cut -f4 -d " "|sort|uniq -c`
 
+![uniqc](images/uniqc.png)
 
 Este comando si hubiera salido bien creemos que sería:
-`` ls -la|cut -f4 -d " "|sort|uniq -c|wc -l`
+` ls -la|cut -f4 -d " "|sort|uniq -c|wc -l`
+
 
 
 
