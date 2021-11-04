@@ -97,10 +97,11 @@ Con este orden podemos ver que el usuario root tiene varias carpetas y ficheros 
 
 
 
-Finalmente, procedimos a realizar el comando en una línea para ver los usuarios que teníamos y cuantas carpetas tenían a su nombre.
+Finalmente, procedimos a realizar el comando en una línea para ver los usuarios que teníamos y cuantas carpetas tenían a su nombre:
 `ls -la|tail -n+2|cut -c 15-33|sort|uniq -c`
 Con este comando podemos ver el comando ls -la, al que se le ha excluido la primera línea y a la que hemos cortado en todas las filas del caracter 15 al 33, que coincide con la columna 3 donde aparecen los usuarios, después ordenamos para que pueda actuar la orden `uniq -c` la cual nos permite contar las líneas repetidas. 
-Sabiendo esto, en una sola línea de comandos para averiguar el número de usuarios distintos que tienen al menos una carpeta en `/home`sería:
+Sabiendo esto, en una sola línea de comandos para averiguar el número de usuarios distintos que tienen al menos una carpeta en `/home`tendremos que hacer lo siguiente:
+
 `ls -la|tail -n+2|cut -c 15-33|sort|uniq -c|wc -l`
 
 
