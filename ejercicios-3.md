@@ -90,24 +90,22 @@ el cual nos permite ver en pantalla el comando `ls -la` que permite ver todos lo
 Con este orden podemos ver que el usuario root tiene varias carpetas y ficheros en `/home`. Este usuario root le tendríamos que contar una sola vez y no 6 como aparece ahí, por tanto, el resultado final del númeo de usuarios tendría que ser de 34 y no de 39 como aparece con el comando `ls -la|tail -n+2|wc -l`al final de la imagen.   
 
 
-![lsla4](images/lsla4.png)
+![lsla](images/lsla.png)
 
-
-AÑADIR FOTO LSLA NUEVA Y SORTK3WC
-
+![sortk3wcl](images/sortk3wcl.PNG)
 
 
 
 
 
 Finalmente, procedimos a realizar el comando en una línea para ver los usuarios que teníamos y cuantas carpetas tenían a su nombre.
-´ls -la|tail -n+2|cut -c 15-33|sort|uniq -c´
-Con este comando podemos ver el comando ls -la, al que se le ha excluido la primera línea y a la que hemos cortado en todas las filas del caracter 15 al 33, que coincide con la columna 3 donde aparecen los usuarios, después ordenamos para que pueda actuar la orden ùniq -c` la cual nos permite contar las líneas repetidas. 
+`ls -la|tail -n+2|cut -c 15-33|sort|uniq -c`
+Con este comando podemos ver el comando ls -la, al que se le ha excluido la primera línea y a la que hemos cortado en todas las filas del caracter 15 al 33, que coincide con la columna 3 donde aparecen los usuarios, después ordenamos para que pueda actuar la orden `uniq -c` la cual nos permite contar las líneas repetidas. 
 Sabiendo esto, en una sola línea de comandos para averiguar el número de usuarios distintos que tienen al menos una carpeta en `/home`sería:
-´ls -la|tail -n+2|cut -c 15-33|sort|uniq -c|wc -l´
+`ls -la|tail -n+2|cut -c 15-33|sort|uniq -c|wc -l`
 
-AÑADIR FOTO UNIQWCL
 
+![uniqwcl](images/uniqwcl.png)
 
 
 
