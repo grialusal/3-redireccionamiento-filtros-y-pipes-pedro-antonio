@@ -32,7 +32,7 @@ En segundo lugar para ordenar números en orden descendente emplearemos el coman
 
 Y para ordenar usando la tercera y segunda columna según el orden de prioridad emplearemos el comando: 
 
-`sort -k3,4 gene-2-desordenado.bed `
+`sort -k3,2 gene-2-desordenado.bed `
 
 Antes de esto hemos consultado el manual para ver como se emplearia la opción -k de sort: 
 
