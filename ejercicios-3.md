@@ -17,24 +17,34 @@ Trata ahora de ordenar este fichero de acuerdo a los siguientes criterios:
 3. Usando a la vez la tercera y la segunda columna (en este orden de prioridad). Consulta el manual para ver la opción -k. 
 
 ### Respuesta ejercicio 1
-En primer lugar se crea un fichero llamado "gene-2-desordenado.bed" a partir del comando sort -R ejecutado sobre el fichero `gene-2.bed`. Se ha empleado el comando: 
+En primer lugar se crea un fichero llamado `gene-2-desordenado.bed` a partir del comando sort -R ejecutado sobre el fichero `gene-2.bed`. Se ha empleado el comando: 
+
 `sort -R gene-2.bed > gene-2-desordenado.bed`
-Tras esto empleamos cat para ver el contenido del fichero `gene-2.bed` y del fichero desordenado que se ha creado en nuestra carpeta `gene-2-desordenado.bed`
+
+Tras esto empleamos `cat` para ver el contenido del fichero `gene-2.bed` y del fichero desordenado que se ha creado en nuestra carpeta `gene-2-desordenado.bed`
+
 ![sortR](images/sortR.png)
 
 Para ordenar el fichero creado `gene-2-desordenado.bed` siguiendo los pasos del ejercicio. Dado que no hay que cortar elementos, no emplearemos el comando `cut`. 
 En segundo lugar para ordenar números en orden descendente emplearemos el comando:
+
 `sort -nr gene-2-desordenado.bed`
+
 Y para ordenar usando la tercera y segunda columna según el orden de prioridad emplearemos el comando: 
+
 `sort -k3,4 gene-2-desordenado.bed `
+
 Antes de esto hemos consultado el manual para ver como se emplearia la opción -k de sort: 
+
 `man sort`
 
 ![manSortK1](images/manSortK1.png)
 ![manSortK2](images/manSortK2.png)
 
 Empleando los dos comandos a la vez nos quedaría así:
+
 `sort -nr -k3,2 gene-2-desordenado.bed`
+
 Con esto nos ordenará el fichero en orden descendente usándo la tercera columna para ordenar valores y después emplea la segunda columna.
  
 ![sortNRK](images/sortNRK.PNG)
