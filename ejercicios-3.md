@@ -82,8 +82,7 @@ Encuentra, usando una sola línea, el número de usuarias diferentes que tienen 
 
 ### Respuesta ejercicio 4
 
-Para hacer este ejercicio en una sola línea, primero vamos a ver lo que nos tendría que dar el resultado. Y para ello vamos a usar inicialmente el siguiente comando,
-el cual nos permite ver en pantalla el comando `ls -la` que permite ver todos los usuarios de las distintas carpetas y ficheros que hay en `/home`. Después borramos la primera línea de `ls -la` en la que venía el total de memoria que tenemos en `/home` y finalmente ordenamos por la columna 3 en la que aparecen los usuarios. 
+Para hacer este ejercicio en una sola línea, primero vamos a ver lo que nos tendría que dar el resultado. Y para ello vamos a usar inicialmente el comando `ls -la` que permite ver todos los usuarios de las distintas carpetas y ficheros que hay en `/home`. Después borramos la primera línea de `ls -la` en la que venía el total de memoria que tenemos en `/home` y finalmente ordenamos por la columna 3 en la que aparecen los usuarios. 
 
 `ls -la|tail -n+2|sort -k3`
 
