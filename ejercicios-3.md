@@ -50,7 +50,11 @@ Con esto nos ordenará el fichero en orden descendente usándo la tercera column
 ![sortNRK](images/sortNRK.PNG)
 
 
+## Comentarios
 
+Muy bien, se ha obtenido el resultado correcto. Otra opación, discutida en la correción del ejercicio es usar `-k3,3n -k2,2n` en lugar de `-k3,2` para asegurarse en el caso de que haya otros flags, pueto que los puestos en la k van a modificar al flag que se ponga fuera del argumento.
+
+Nota: 2,5/2,5
 
 ## Ejercicio 2
 
@@ -70,6 +74,11 @@ Para comprobar cuántos tipos de freatures distintos hay en `Homo_sapiens.GRCh38
 
 Como se puede comprobar el comando `wc -l` muestra que hay 53 líneas, por lo tanto hay 53 tipos de freatures diferentes, estos pueden consultarse en el siguiente archivo de texto: [human](documents/human.txt).
 
+## Comentarios
+El pipeline propuesto consigue llegar a la lista de features. Se usa el `cut -f 2-3`que va a sacer la segunda y la tercera columna, la segunda columna indica la base de datos en el caso de Drosophila al ser la misma, cuando se ejecuta `uniq-c` no altera el resultado, pero en los datos de humano vemos que algunas columnas de features (tercera columna) aparecen más de una vez a pesar de ejecutar `uniq-c` debido a que también se cortó la segunda columna. Además se están incluyendo algunas líneas del encabezado, puesto que este archivo tiene cinco líneas de encabezado (que empiezan por #), Para no contar con estas línes se podría haber usado `tail -n+6` o eliminar todos los encabezados con `grep -v "^#"` en lugar del `cut`.
+
+Nota 2,1/2,5
+
 ## Ejercicio 3
 
 Recuerdas `covid-samples.fasta`? Localízalo en tu HOME dentro de la carpeta gtfs, y extrae, usando un pipeline, los nombres de las secuencias contenidas en este fichero. Luego saca la primera palabra de cada una, ordénalas y guárdalas en un fichero `covid-seq-names.txt`.
@@ -85,6 +94,11 @@ Para extraer el nombre de cada secuencia con un pipeline tal y como pide la prim
 Después, tal y como pide la segunda parte del ejercicio, hemos extraído la primera palabra de cada nombre y las hemos ordenado, por último hemos guardado todo en el siguiente archivo de texto: [covid-seq-names.txt](documents/covid-seq-names.txt). Para realizar la segunda parte del ejercicio hemos empleado la siguiente pipeline : `grep ">" covid-samples.fasta | cut -f 1 -d " " | sort | tee covid-seq-names.txt`, el resultado obtenido en la terminal tras aplicar este pipeline fue el siguiente:
 
 ![primera-palabla](images/primera-palabra.PNG)
+
+## Comentarios
+Muy bien, el pipeline es correcto y se consigue el resultado solicitado. Para la primera parte se podría habers usado el comando `find` para encontrar el archivo, tener la clara la ruta y ejecutar el pipelina directamente sin tener que copiar de nuevo los archivos (que pueden llegar a ser muy grandes)
+
+Nota: 2,5/2,5
 
 ## Ejercicio 4
 
@@ -118,6 +132,14 @@ Sabiendo esto, en una sola línea de comandos para averiguar el número de usuar
 
 
 ![uniqwcl](images/uniqwcl.png)
+
+## Comentarios
+
+Muy bien, hay formas escalables de hacerlo, pero con lo que habíamos aprendido hasta ahora está muy bien.
+
+Nota 2,5/2,5
+
+Total: 9,6
 
 
 
